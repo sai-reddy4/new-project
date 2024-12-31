@@ -1,0 +1,83 @@
+<div class="parent">
+         <div class="child">
+           <div class="text">
+
+    <h1>Basic calculator</h1>
+     <label for="">Enter a number : </label>
+     <input type="number" id="number">
+     <br><br>
+     <label for="">Enter a second number : </label>
+     <input type="number" id="secondnumber">
+
+     <h2 id="result">XXXXX</h2>
+
+     <button class="b1" onclick="Addition()">Addition</button>
+     <i>&nbsp;</i> <i>&nbsp;</i> <i>&nbsp;</i>
+     <button class="b2" onclick="Substraction()">Substraction</button>
+     <i>&nbsp;</i> <i>&nbsp;</i> <i>&nbsp;</i>
+     <button class="b3" onclick="multiplication()">multiplication</button>
+     <i>&nbsp;</i> <i>&nbsp;</i> <i>&nbsp;</i>
+     <button class="b4"  onclick="division()">division</button>
+    </div>
+    </div>
+    </div>
+
+<script>
+     function Addition(){
+       var number = document.getElementById('number').valueAsNumber;
+       console.log(number);
+
+       var secondnumber = document.getElementById('secondnumber').valueAsNumber;
+       console.log(secondnumber);
+
+       var result =number+secondnumber;
+       console.log(result);
+
+      document.getElementById("result").innerText =result;
+     }
+
+     function Substraction(){
+       var number = document.getElementById('number').valueAsNumber;
+       console.log(number);
+
+       var secondnumber = document.getElementById('secondnumber').valueAsNumber;
+       console.log(secondnumber);
+
+       var result =number-secondnumber;
+       console.log(result);
+       document.getElementById("result").innerText =result;
+
+     }
+     function multiplication(){
+       var number = document.getElementById('number').valueAsNumber;
+       console.log(number);
+
+       var secondnumber = document.getElementById('secondnumber').valueAsNumber;
+       console.log(secondnumber);
+
+       var result =number*secondnumber;
+       console.log(result);
+       document.getElementById("result").innerText =result;
+
+    }
+
+       function division(){
+       var number = document.getElementById('number').valueAsNumber;
+       console.log(number);
+
+       var secondnumber = document.getElementById('secondnumber').valueAsNumber;
+       console.log(secondnumber);
+
+       var result =number/secondnumber;
+       console.log(result);
+       document.getElementById("result").innerText =result;
+
+    }
+
+
+
+
+
+
+
+</script>

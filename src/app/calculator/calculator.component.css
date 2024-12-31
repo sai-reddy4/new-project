@@ -1,0 +1,44 @@
+.parent{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.child{
+    background-color: rgb(153, 180, 221);
+    width: 500px;
+    height: 300px;
+    border: solid black;
+    border-radius: 10px;
+}
+.text{
+    margin-left: 50px;
+}
+.b1{
+    background-color: indianred;
+    border-radius: 5px;
+}
+.b2{
+    background-color: rgb(144, 58, 125);
+    border-radius: 5px;
+}
+.b3{
+    background-color: rgb(238, 222, 83);
+    border-radius: 5px;
+}
+.b4{
+    background-color: rgb(92, 208, 88);
+    border-radius: 5px;
+}
+#number{
+    border-radius: 5px;
+    background-color: dimgrey;
+}
+#secondnumber{
+    border-radius: 5px;
+    background-color:  dimgrey;
+
+}
