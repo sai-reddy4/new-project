@@ -1,0 +1,27 @@
+.parent{
+    width: 80vw;
+    height: 100vh;
+    background-color: bisque;
+}
+.top{
+    width: 100%;
+    height: 30%;
+    background-color: blue;
+    display: flex;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(219, 247, 164);
+}
+.right{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(219, 247, 164);
+}
+#tbl{
+    width: 100%;
+    height: 70%;
+    background-color: aquamarine;
+}

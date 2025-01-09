@@ -8,6 +8,19 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { AccountsComponent } from './accounts/accounts.component';
+import { MytraComponent } from './mytra/mytra.component';
+import { MailComponent } from './mail/mail.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
+import { BlogComponent } from './blog/blog.component';
+import { ImdbComponent } from './imdb/imdb.component';
+import { WeatherComponent } from './weather/weather.component';
+import { ProfileComponent } from './profile/profile.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 const routes: Routes = [
   
@@ -18,8 +31,25 @@ const routes: Routes = [
      {path:'rectangle',component:RectangleComponent},
      {path:'circle',component:CircleComponent},
     {path:'rectangle',component:RectangleComponent},
-    {path:'bmi',component:BMIComponent}],
+    {path:'bmi',component:BMIComponent},
+    {path:'directives',component:DirectivesComponent},
+    {path:'employee',component:EmployeeComponent},
+    {path:'flipkart',component:FlipkartComponent},
+    {path:'vehicle',component:VehicleComponent},
+    {path:'accounts',component:AccountsComponent},
+    {path:'mytra',component:MytraComponent},
+    {path:'mail',component:MailComponent},
+    {path:'pinterest',component:PinterestComponent},
+    {path:'blog',component:BlogComponent},
+    {path:'imdb',component:ImdbComponent},
+    {path:'weather',component:WeatherComponent},
+    {path:'profile',component:ProfileComponent},
+    {path:'carousel',component:CarouselComponent}],
+  
+
+    
   }
+
   
 ];
 
