@@ -1,0 +1,26 @@
+<div class="parent">
+<div class="green">
+    <h2>Social Profiles</h2>
+
+</div>
+<div class="white">
+    <div class="box" *ngFor="let profile of profile">
+        <div><img src="{{profile.coverPhoto}}" alt=""  ></div>
+        <h2>{{profile.fullName}}</h2>
+        <p>{{profile.username}}</p>
+        <p> <b>Location</b> :{{profile.location}}</p>
+        <p> <b>Work</b> :{{profile.work}}</p>
+        <p> <b>Hobbies</b> :{{profile.hobbies}}</p>
+        <p> <b>Interests</b> :{{profile.interests}}</p>
+        
+        <p class="tag1"> Followers :{{profile.followersCount}}</p>
+            
+        <div class="divs"> 
+                <p class="tag2"> Following :{{profile.followingCount}} </p>
+        <p class="tag2"> Posts :{{profile.postsCount}}</p>
+    </div>
+
+
+    </div>
+</div>
+</div>

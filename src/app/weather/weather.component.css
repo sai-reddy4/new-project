@@ -1,0 +1,15 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.main{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(169, 186, 186);
+    padding-top: 20px;
+    text-align: center;
+   
+    
+}

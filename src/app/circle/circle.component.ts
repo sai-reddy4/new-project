@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./circle.component.css']
 })
 export class CircleComponent {
+  num1:number=0;
+  result:number=0;
+
+  area(){
+    this.result=(3.14*(this.num1*this.num1));
+  }
+  Circumference(){
+    this.result=(2*3.14*(this.num1));
+  }
 
 }

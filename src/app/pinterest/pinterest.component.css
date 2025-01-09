@@ -1,0 +1,40 @@
+.parent{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(242, 244, 245);
+}
+
+.box{
+    width: 280px;
+    height: 280px;
+    background-color: rgb(37, 242, 242);
+    position: relative;
+    
+}
+.author{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: rgb(252, 9, 9);
+    font-weight: 700;
+    
+}
+
+#i{
+    width: 280px;
+    height: 280px;
+    opacity: 10px;
+}
+button{
+    width: 150px;
+    height: 30px;
+}
+.box:hover button,
+.box:hover .author{
+    opacity: 1;
+}
+button , .author{
+    opacity: 0;
+}

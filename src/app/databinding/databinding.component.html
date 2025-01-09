@@ -1,1 +1,52 @@
-<img src="/assets/logo.png" alt="" width="100%" height="100%">
+ <div class="parent">
+
+    <div class="main">
+        <div class="text">
+ <h1>Data Binding</h1>
+
+ <!-- <label for="">Name</label>
+ <input type="text"> <br>
+ <label for="">Email</label>
+ <input type="email"> <br>
+ <label for="">Mobile</label>
+ <input type="number"> <br> -->
+
+<!-- intrepolation -->
+
+
+ <h3>{{name}}</h3>
+ <h3>{{age}}</h3>
+ <h3>{{email}}</h3>
+ <h3>{{isIndian}}</h3>
+
+ <!-- 2 way binding -->
+
+ <input type="text" [(ngModel)]="phone">
+ 
+
+<!-- event binding -->
+
+
+<input type="text" (keyup)="typing()"><br>
+ <button (click)="submit()">submit</button>
+ <button [disabled]="isIndian" (click)="submit()">submit</button> <br><br>
+
+ <label for="">num1 : </label>
+ <input type="number" [(ngModel)]="num1"> <br>
+
+ <label for="">num2 : </label>
+ <input type="number" [(ngModel)]="num2"> <br><br>
+
+ <button [disabled]="!num1 || !num2" (click)="sum()">sum</button>
+
+ <h2>sum is : {{result}}</h2>
+
+</div>
+</div>
+</div>
+ 
+
+
+
+
+

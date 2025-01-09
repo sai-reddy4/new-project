@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="cards" *ngFor="let mytra of mytras" id="i">
+        <img src="{{mytra.image}}" alt="" >
+        <div class="rating">
+            {{mytra.rating.rate}}
+            {{mytra.rating.count}}
+
+        </div>
+        <div class="details">
+            <h5>{{mytra.title}}</h5>
+            <p style="color: red;">Rs:{{mytra.price}}/-</p>
+            <p>{{mytra.category}}</p>
+
+            <p>{{mytra.description | slice:0:30}}.................</p>
+            
+        </div>
+
+    </div>
+</div>

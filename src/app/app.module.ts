@@ -11,6 +11,22 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
+import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import {HttpClientModule} from "@angular/common/http";
+import { AccountsComponent } from './accounts/accounts.component';
+import { MytraComponent } from './mytra/mytra.component';
+import { MailComponent } from './mail/mail.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
+import { BlogComponent } from './blog/blog.component';
+import { ImdbComponent } from './imdb/imdb.component';
+import { WeatherComponent } from './weather/weather.component';
+import { ProfileComponent } from './profile/profile.component';
+import { CarouselComponent } from './carousel/carousel.component';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +38,27 @@ import { BMIComponent } from './bmi/bmi.component';
     CalculatorComponent,
     RectangleComponent,
     CircleComponent,
-    BMIComponent
+    BMIComponent,
+    DirectivesComponent,
+    EmployeeComponent,
+    FlipkartComponent,
+    VehicleComponent,
+    AccountsComponent,
+    MytraComponent,
+    MailComponent,
+    PinterestComponent,
+    BlogComponent,
+    ImdbComponent,
+    WeatherComponent,
+    ProfileComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

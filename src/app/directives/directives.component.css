@@ -1,0 +1,16 @@
+
+.parent{
+    width: auto;
+    height: auto;
+    background-color: beige;
+}
+.main{
+    margin: 0px 50px;
+    /* padding: 100px; */
+}
+.green{
+    color:blueviolet;
+}
+.red{
+    color: brown;
+}

@@ -3,17 +3,17 @@
         <div class="text">
 <h1>Rectangle</h1>
 <label for="">Length : </label>
-<input type="number" class="length">
+<input type="number" class="length" [(ngModel)]="num1">
 <br><br>
-<label for="test">width : </label>
-<input type="number" class="width">
+<label for="">breadth : </label>
+<input type="number" class="breadth" [(ngModel)]="num2">
 <br><br>
-<button class="b1" onclick="area()">area</button>
+<button class="b1" (click)="area()">area</button>
 <i>&nbsp;</i><i>&nbsp;</i>
 
-<button class="b2" onclick="perimeter()">perimeter</button>
+<button class="b2" (click)="perimeter()">perimeter</button>
 
-<h2 id="results">XXXXX</h2>
+<h2 id="results">Result is :{{result}}</h2>
 
 
 </div>
@@ -22,8 +22,24 @@
 
 </div>
 
-<script>
 
 
-    
-</script>
+<!-- <script>
+      
+      function area() {
+        var first = Number(document.getElementById("length").value);
+        var second = Number(document.getElementById("breadth").value);
+        var result = first*second;
+        console.log(result);
+        document.getElementById("total").innerText = "area: " + result;
+      }
+
+      function perimeter() {
+        var first = Number(document.getElementById("length").value);
+        var second = Number(document.getElementById("breadth").value);
+        var result = 2*(first + second)
+        console.log(result);
+        document.getElementById("total").innerText = "perimeter: " + result;
+      }
+
+    </script> -->

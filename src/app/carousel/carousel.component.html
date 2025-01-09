@@ -1,0 +1,24 @@
+
+<div class="parent">
+    
+   
+
+    <div class="main" *ngFor="let carousel of carousel">
+       <div> <img src="{{carousel.image_url}}" alt=""></div>
+       <br><br>
+       <h2>{{carousel.pokemon}}</h2>
+       <br><br><br>
+       <p><b>Type</b> : {{carousel.type}}</p>
+       <p><b>Abilities</b> : {{carousel.abilities}}</p>
+       <p><b>Hitpoints</b> : {{carousel.hitpoints}}</p>
+       <p><b>Evolutions</b> : {{carousel.evolutions}}</p>
+       <p><b>Location</b> : {{carousel.location}}</p>
+       
+       <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button> -->
+    </div>
+    </div>

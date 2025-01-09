@@ -3,19 +3,41 @@
         <div class="text">
 <h1>Circle</h1>
 <label for="">Radius : </label>
-<input type="number" class="radius">
+<input type="number" class="radius"[(ngModel)]="num1">
 <br><br>
 
-<button class="b1" onclick="area()">area</button>
+<button class="b1" (click)="area()">area</button>
 <i>&nbsp;</i><i>&nbsp;</i>
 
-<button class="b2" onclick="perimeter()">perimeter</button>
+<button class="b2" (click)="Circumference()">Circumference</button>
 
-<h2 id="results">XXXXX</h2>
+<h2 id="results">Result is :{{result}}</h2>
 
-
-</div>
 
 </div>
 
 </div>
+
+</div>
+
+<!-- <script>
+    
+    // Circumference
+    function Circumference() {
+      var first = Number(document.getElementById("radius").value);
+      
+      var result = 2*3.14* first
+      console.log(result);
+      document.getElementById("total").innerText = "Circumference of a circle is: " + result;
+    }
+
+    // Area 
+    function area() {
+      var first = Number(document.getElementById("radius").value);
+      
+      var result = 3.14*first * first
+      console.log(result);
+      document.getElementById("total").innerText = "Area of a circle is: " + result;
+    } -->
+
+  <!-- </script> -->

@@ -11,13 +11,16 @@ body{
 .left{
     width: 20%;
     height: 100%;
-    background-color: rgb(177, 197, 148);
+    background-color: black ;
     padding-left: 20px;
+    color: blueviolet;
+    overflow-y: auto;
 }
 .right{
     width: 80%;
     height: 100%;
     background-color: rgb(104, 155, 140);
+    overflow: auto;
 }
 .btn{
     background-color: orange;
