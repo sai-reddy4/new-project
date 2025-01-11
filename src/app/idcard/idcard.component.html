@@ -1,0 +1,81 @@
+<div class="parent">
+
+    <div>
+        <button class="btn btn-primary" routerLink="/mywebsite/create-idcard">Create new idcard</button>
+
+        <input type="text" (keyup)="filter()" placeholder="Search for student" [(ngModel)]="sai" >
+    
+        <select [(ngModel)]="column">
+            <option>name</option>
+            <option>id</option>
+            <option>phone</option>
+            <option>city</option>
+            <option>dob</option>
+            <option>email</option>
+            
+        </select>
+        
+        <select [(ngModel)]="order" >
+            <option >asc</option>
+            <option >dese</option>
+        </select>
+        <button class="btn btn-primary" (click)="sort()">sort</button>
+<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+    
+<select [(ngModel)]="limit">
+    <option>2</option>
+    <option>5</option>
+    <option>9</option>
+    
+</select>
+
+<select [(ngModel)]="page" >
+    <option >1</option>
+    <option >2</option>
+    <option >3</option>
+</select>
+<i>&nbsp;</i>
+
+
+<button class="btn btn-primary" (click)="pagination()">Pagination</button> <br><br>
+
+</div><br>
+
+
+    <div class="main" *ngFor="let idcard of idcard">
+        <div class="top">
+            <div class="img"><img src="{{idcard.school_logo}}" alt="" width="80px" height="80px"></div>
+            <div class="colname">
+                <h4>{{idcard.school_name}}</h4> 
+                <div class="pns"><p><b>Pin</b>:{{idcard.school_pin}}</p><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <p><b>City</b>:{{idcard.school_city}}</p></div>
+
+            
+            </div>
+        </div>
+       
+        <div class="middle">
+            <div class="left">
+                <p><b>Name :{{idcard.name}}</b></p>
+                <p><b>ID :{{idcard.id}}</b></p>
+                <p><b>Phone :{{idcard.phone}}</b></p>
+                <p><b>City :{{idcard.city}}</b></p>
+                <p class="email"><b>Email :{{idcard.email}}</b></p>
+                <p><b>Dob :{{idcard.dob}}</b></p>
+            </div>
+            <div class="right">
+            <img src="{{idcard.profile_picture}}" alt="" class="img1">
+            <p id="principal"><b>PRINCIPAL</b></p>
+
+        </div>
+    </div>
+        <div class="bot">
+
+            <button class="btn btn-dark">view</button>
+            <button class="btn btn-info">Edit</button>
+            <button class="btn btn-danger" (click)="delete(idcard.id)">delete</button>
+
+        </div>
+    
+</div>
+</div>

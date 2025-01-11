@@ -11,7 +11,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
@@ -26,6 +26,9 @@ import { ImdbComponent } from './imdb/imdb.component';
 import { WeatherComponent } from './weather/weather.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { IdcardComponent } from './idcard/idcard.component';
+import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
 
 
 @NgModule({
@@ -51,13 +54,17 @@ import { CarouselComponent } from './carousel/carousel.component';
     ImdbComponent,
     WeatherComponent,
     ProfileComponent,
-    CarouselComponent
+    CarouselComponent,
+    CreateVehicleComponent,
+    IdcardComponent,
+    CreateIdcardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
     
   ],
   providers: [],
