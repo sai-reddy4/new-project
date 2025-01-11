@@ -21,6 +21,9 @@ import { ImdbComponent } from './imdb/imdb.component';
 import { WeatherComponent } from './weather/weather.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { IdcardComponent } from './idcard/idcard.component';
+import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
 
 const routes: Routes = [
   
@@ -44,7 +47,10 @@ const routes: Routes = [
     {path:'imdb',component:ImdbComponent},
     {path:'weather',component:WeatherComponent},
     {path:'profile',component:ProfileComponent},
-    {path:'carousel',component:CarouselComponent}],
+    {path:'carousel',component:CarouselComponent},
+    {path:'create-vehicle',component:CreateVehicleComponent},
+    {path:'idcard',component:IdcardComponent},
+    {path:'create-idcard',component:CreateIdcardComponent}],
   
 
     
