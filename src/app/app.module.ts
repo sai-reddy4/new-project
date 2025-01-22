@@ -29,6 +29,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { IdcardComponent } from './idcard/idcard.component';
 import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
+import { LoginComponent } from './login/login.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { FormsComponent } from './forms/forms.component';
 
 
 @NgModule({
@@ -57,7 +60,10 @@ import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
     CarouselComponent,
     CreateVehicleComponent,
     IdcardComponent,
-    CreateIdcardComponent
+    CreateIdcardComponent,
+    LoginComponent,
+    CreateUserComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
