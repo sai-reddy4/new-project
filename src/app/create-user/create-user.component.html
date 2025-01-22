@@ -2,11 +2,35 @@
 <!-- --------------------------------------------------------------------FormGroup------------------------------------------------------------------- -->
 <form action="" [formGroup]="userForm">
     <input type="text" placeholder="Name" id="name" formControlName="name"><br><br>
+
+    <div *ngIf="userForm.get('name')?.invalid && userForm.get('name')?.touched">
+        <p *ngIf="userForm.get('name')?.errors?.['required']">Name is required</p>
+
+    </div>
     <input type="text" placeholder="Email" id="email" formControlName="email"><br><br>
+
+    <div *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched">
+        <p *ngIf="userForm.get('email')?.errors?.['required']">Email is required</p>
+        <p *ngIf="userForm.get('email')?.errors?.['email']">Email is invalid</p>
+
+    </div>
 
     <input type="password" placeholder="Password" id="password" formControlName="password"><br><br>
 
+    <div *ngIf="userForm.get('password')?.invalid && userForm.get('password')?.touched">
+        <p *ngIf="userForm.get('password')?.errors?.['required']">Password is required</p>
+        <p *ngIf="userForm.get('password')?.errors?.['minlength']">Minimum 6 required</p>
+        <p *ngIf="userForm.get('password')?.errors?.['maxlength']">Maximum 10 required</p>
+
+    </div>
     <input type="number" placeholder="Mobile" id="mobile" formControlName="mobile"><br><br>
+
+    <div *ngIf="userForm.get('mobile')?.invalid && userForm.get('mobile')?.touched">
+        <p *ngIf="userForm.get('mobile')?.errors?.['required']">Mobile is required</p>
+        <p *ngIf="userForm.get('mobile')?.errors?.['min']">Minimum 10 required</p>
+        <p *ngIf="userForm.get('mobile')?.errors?.['max']">Maximum 10 required</p>
+
+    </div>
 <!-- -------------------------------------------------------------Nested FormGroup------------------------------------------------------------------------------- -->
              <div formGroupName="address">
 
@@ -64,7 +88,7 @@
 
                         </div>
 
-                    </div>
+                    </div> 
 
                 </div>
 

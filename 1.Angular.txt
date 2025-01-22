@@ -138,6 +138,34 @@ Reactive forms=
 
      2)Nested FormGroup
 
+     Form Validations
+=ニニニニニニニニニニニニ===
+TS:
+====
+
+name:new FormControl('', [Validators.required, Validators.maxLength(10)]);
+
+HTML:
+=====
+(div *ngIf="userForm. get('email')?.invalid && userForm.get('email')?.touched">
+<p *ngIf="CONTROLS? .errors?.['required']">Error Message</p>
+<p *ngIf="CONTROLS?.errors?.['maxlength']">Error Message</p>
+</div>
+
+
+CONTROLS:
+=========
+1)FormGroup
+2)1Nested FormGroup
+3) FormArray
+userForm.get('name')
+userForm.get('address')?.get('pincode')
+cardsFormArray.Controls[i]?.get('cvv')
+
+
+eve.holt@reqres.in
+
+
 
 
 

@@ -6,11 +6,30 @@
 
 <form action="" [formGroup]="userForm">
     <input type="text" placeholder="Name"  formControlName="name"><br><br>
+
+    <div *ngIf="userForm.get('name')?.invalid && userForm.get('name')?.touched">
+        <p *ngIf="userForm.get('name')?.errors?.['required']">Name pakka evvali</p>
+
+
+    </div>
     <input type="number" placeholder="class"  formControlName="class"><br><br>
+
+    <div *ngIf="userForm.get('class')?.invalid && userForm.get('class')?.touched">
+        <p *ngIf="userForm.get('class')?.errors?.['required']">Class kuda required aaa</p>
+
+    </div>
 
     <input type="text" placeholder="Father Name"  formControlName="fathername"><br><br>
 
     <input type="text" placeholder="Email"  formControlName="email"><br><br>
+
+    <div *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched">
+        <p *ngIf="userForm.get('email')?.errors?.['required']">Mail required</p>
+        <p *ngIf="userForm.get('email')?.errors?.['email']">invalid mail</p>
+
+    </div>
+
+
 
     <input type="date" placeholder="DOB"  formControlName="dob"><br><br>
 
@@ -25,6 +44,13 @@
         <input type="text" placeholder="State"  formControlName="state"><br><br>
 
         <input type="number" placeholder="PinCode"  formControlName="pincode"><br><br>
+
+        <div *ngIf="userForm.get('address')?.get('pincode')?.invalid && userForm.get('address')?.get('pincode')?.touched">
+            <p *ngIf="userForm.get('address')?.get('pincode')?.errors?.['required']">Pincode required</p>
+            <p *ngIf="userForm.get('address')?.get('pincode')?.errors?.['max']">max 6 required</p>
+            <p *ngIf="userForm.get('address')?.get('pincode')?.errors?.['min']">min 6 required</p>
+
+        </div>
 
     </div>
 
