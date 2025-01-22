@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormArray, FormControl, FormGroup } from '@angular/forms';
+import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-forms',
@@ -9,16 +9,16 @@ import { FormArray, FormControl, FormGroup } from '@angular/forms';
 export class FormsComponent {
 
   public userForm:FormGroup=new FormGroup({
-    name:new FormControl(),
-    class:new FormControl(),
+    name:new FormControl('',[Validators.required]),
+    class:new FormControl('',[Validators.required]),
     fathername:new FormControl(),
-    email:new FormControl(),
+    email:new FormControl('',[Validators.required,Validators.email]),
 
        address:new FormGroup({
         addressline:new FormControl(),
         city:new FormControl(),
         state:new FormControl(),
-        pincode:new FormControl(),
+        pincode:new FormControl('',[Validators.required,Validators.max(100000),Validators.min(99999)]),
        }),
 
        s:new FormControl(),

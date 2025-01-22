@@ -1,15 +1,17 @@
-<div class="parent">
-    <div class="login">
-<label for="">USER NAME:</label>
-<input type="text">
-<br><br>
-
-<label for="">PASSWORD :</label>
-<input type="text">
-<br><br>
-
-<button  routerLink="/mywebsite" class="btn btn-primary">LOGIN</button>
-
-</div>
-
-</div>
+<form action="" [formGroup]="loginForm">
+    <div class="parent">
+        <div class="login">
+    <label for="">USER NAME:</label>
+    <input type="text" formControlName="email">
+    <br><br>
+    
+    <label for="">PASSWORD :</label>
+    <input type="password" formControlName="password">
+    <br><br>
+    
+    <button  class="btn btn-primary" (click)="login()">LOGIN</button>
+    
+    </div>
+    
+    </div>
+</form>
