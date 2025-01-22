@@ -24,8 +24,16 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { IdcardComponent } from './idcard/idcard.component';
 import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
+import { LoginComponent } from './login/login.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { FormsComponent } from './forms/forms.component';
 
 const routes: Routes = [
+  
+  {path:'',component:LoginComponent},
+
+  {path:'login',component:LoginComponent},
+  
   
   {path:'mywebsite',component:MywebsiteComponent, children:[{path:'home',component:HomeComponent},
      {path:'welcome',component:WelcomeComponent},
@@ -50,11 +58,15 @@ const routes: Routes = [
     {path:'carousel',component:CarouselComponent},
     {path:'create-vehicle',component:CreateVehicleComponent},
     {path:'idcard',component:IdcardComponent},
-    {path:'create-idcard',component:CreateIdcardComponent}],
+    {path:'create-idcard',component:CreateIdcardComponent},
+    {path:'create-user',component:CreateUserComponent},
+    {path:'forms',component:FormsComponent}],
   
 
     
-  }
+  },
+  
+  
 
   
 ];

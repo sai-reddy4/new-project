@@ -1,0 +1,17 @@
+.parent{
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    overflow-y: auto;
+
+    
+}
+
+.text{
+    width: 500px;
+    height: 100%;
+    background-color: bisque;
+    margin-left: 400px;
+    
+    
+}

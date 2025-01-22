@@ -1,0 +1,242 @@
+
+    
+    Routings
+    http methods
+    rx js
+    forms
+    
+    Angular installation=
+    =======================
+    1) Node js installation
+          check: npm -v
+                 node -v
+
+    2) Angular installation
+
+        npm install -g @angular/cli@15
+
+        check: ng version
+
+    3) Create an angular application
+         -open command promt
+         -cd Desktop
+         -ng new my-app
+
+                 Routing-y
+                 css
+
+    4) Running angular application
+               ng- serve
+        check:     http://localhost:4200/
+
+
+        **) Open power shell as admin
+        **) 
+          
+
+          cost route: Routes = [
+            {path:}
+          ]
+
+  
+   data binding=
+   ==============
+               event binding------------()
+               property binding-------------[]
+               interpolletion--------------------{{}}
+                two way dbinding-----------------------[(?)]
+
+
+
+
+    Architechture=
+    ==============
+      => directives--->alter the data in dom--edit
+
+            1) structural directives-->editing the structure of html 
+
+                  -> *ngFor
+                  -> *ngIf
+
+            2)Attribute directives
+                    -> *ngClass
+                    -> *ngStyle
+
+            3)custom  directives
+
+
+
+       => pipes --->use to alter the data format (filters)
+
+             | lower case 
+             | upper case
+             | date
+             | date: 'yy-mm-dd'
+
+
+        => 
+
+    Rx  js=
+    =======
+
+    promise----single call back
+    observable----multiple  call backs--unicost
+    subject--------multiple  call backs--multicost
+
+
+
+     Dataflow:
+
+Form Creation:
+
+HTML --> TS ---> Servive --> API
+
+Dislaying data: Table
+
+API  ---> Service ---> TS --- HTML   ( in the form of table using Interpolation{{}})
+
+
+
+ALL Possible API calls=
+========================
+
+CURD operations
+
+
+display all data          get              direct url
+specific                  get
+filter                    ""               url?filter=key
+pagination                ""               url?limit="+limit+"&page="+page;
+sort                      ""               url?sortBy="+column+"&order="+order;
+
+create                    post             url,data);
+update                    put
+delete                    delete           url/"+id;
+
+Forms=
+========
+
+        --->Reactive forms
+
+        --->Template driven forms (html) using ->[(ngModel)]
+   
+
+
+
+Reactive forms=
+================
+
+       1)FormGroup------- diff  FormControls----like inputs
+       2)Nested FormGroup----form inside form 
+       3)Dynamic Forms------Dynamic data read
+       4)Form Array--------
+       5)Validators
+       6)custom Validators
+
+
+     1)FormGroup
+
+     2)Nested FormGroup
+
+
+
+
+
+
+
+Angular material=
+==================
+
+Booot strap-----------css framework-classses
+
+Angular material----------ui library-component
+
+material=
+         mat buttton module--buttton
+
+
+import in app module.ts*
+
+
+
+ck editor
+
+material icons
+
+
+
+
+
+          
+                 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  Git
+  ===
+
+     create account in GIT=
+
+             git config --global user.name "sai-reddy4"
+             git config --global user.email "saikoo1104@gmail.com"
+
+      check=
+
+           git config --list
+
+
+        Link=
+
+               Project <-> repository
+
+              git init
+              git remote add origin --url--
+
+              check:git remote -v
+
+        Process=
+        ========
+
+        git add ->single file
+        git add . ->all files
+
+        git commit -m "XXXX"
+
+        git push
+
+        pull request -> approve-> merge
+
+
+        create branch
+        git branch
+        git fetch
+        git checkout dashboard
+
+
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

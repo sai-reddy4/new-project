@@ -1,0 +1,84 @@
+<div class="parent">
+    <div class="text">
+<h1>Reactive Forms</h1>
+
+<!-- ============================================================================================================== -->
+
+<form action="" [formGroup]="userForm">
+    <input type="text" placeholder="Name"  formControlName="name"><br><br>
+    <input type="number" placeholder="class"  formControlName="class"><br><br>
+
+    <input type="text" placeholder="Father Name"  formControlName="fathername"><br><br>
+
+    <input type="text" placeholder="Email"  formControlName="email"><br><br>
+
+    <input type="date" placeholder="DOB"  formControlName="dob"><br><br>
+
+    <!-- ======================================================================================================== -->
+
+    <div formGroupName="address">
+
+        <input type="text" placeholder="Addressline"  formControlName="addressline"><br><br>
+
+        <input type="text" placeholder="City"  formControlName="city"><br><br>
+
+        <input type="text" placeholder="State"  formControlName="state"><br><br>
+
+        <input type="number" placeholder="PinCode"  formControlName="pincode"><br><br>
+
+    </div>
+
+    <!-- ========================================================================================================= -->
+
+    <label >Type</label>
+    <input type="radio" name="s" formControlName="s" value="dayscholar">
+    <label >Dayscholar</label>
+
+    <input type="radio" name="s" formControlName="s" value="residential">
+    <label >Residential</label>
+
+    <div *ngIf="userForm.get('s')?.value=='dayscholar'">
+        <label >Buss Fee</label>
+        <input type="number" formControlName="busfee">
+    </div>
+
+    <div *ngIf="userForm.get('s')?.value=='residential'">
+        <label >Hostel Fee</label>
+        <input type="number" formControlName="hostelfee">
+    </div>
+    <!-- ============================================================================================================== -->
+     
+    <br><br>
+    <button (click)="marks()">Add marks</button>
+
+    <div formArrayName="marks">
+        <div *ngFor="let marks of marksFormArray.controls;let i=index">
+            <div formGroupName="{{i}}">
+                <h2> marks :{{i+1}}</h2>
+
+                <label>Class :</label>
+                <input type="number" formControlName="class"><br><br>
+
+                <label>YEar :</label>
+                <input type="number" formControlName="year"><br><br>
+
+                <label>Percentage :</label>
+                <input type="number" formControlName="percentage"><br><br>
+
+                <button (click)="delete(i)">Delete marks</button>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <button class="btn btn-info" (click)="create()">Create</button>
+
+</form>
+</div>
+</div>
