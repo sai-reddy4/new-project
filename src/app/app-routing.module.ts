@@ -29,6 +29,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { FormsComponent } from './forms/forms.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { ViewIdComponent } from './view-id/view-id.component';
 
 const routes: Routes = [
    
@@ -65,7 +66,9 @@ const routes: Routes = [
     {path:'create-user',component:CreateUserComponent},
     {path:'forms',component:FormsComponent},
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
-    {path:'edit-vehicle/:id',component:CreateVehicleComponent}],
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+    {path:'view-id/:id',component:ViewIdComponent},
+    {path:'edit-id/:id',component:CreateIdcardComponent}],
   
 
     

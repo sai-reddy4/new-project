@@ -1,5 +1,8 @@
 <form action="" [formGroup]="idcardForm"><br>
 
+    <h1>{{id? 'Edit idcard' : 'Create idcard'}}</h1> 
+
+
     <input type="text" placeholder="name" formControlName="name"><br><br>
 
     <input type="text" placeholder="phone" formControlName="phone"><br><br>
@@ -12,10 +15,10 @@
 
     <input type="text" placeholder="DOB" formControlName="dob"><br><br>
 
-    <input type="text" placeholder="id" formControlName="id"><br><br>
+    <!-- <input type="text" placeholder="id" formControlName="id"><br><br> -->
 
 
-    <button class="btn btn-primary" (click)="create()">submit</button>
+    <button class="btn btn-primary" (click)="submit()">submit</button>
 
    
 </form>

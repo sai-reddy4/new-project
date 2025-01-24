@@ -33,6 +33,7 @@ import { LoginComponent } from './login/login.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { FormsComponent } from './forms/forms.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { ViewIdComponent } from './view-id/view-id.component';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     LoginComponent,
     CreateUserComponent,
     FormsComponent,
-    VehicleDetailsComponent
+    VehicleDetailsComponent,
+    ViewIdComponent
   ],
   imports: [
     BrowserModule,
