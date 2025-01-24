@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.vehicle-details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.vehicle-details img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.vehicle-details h3 {
+    color: #666;
+    font-size: 1.2em;
+    margin: 10px 0;
+}

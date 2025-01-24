@@ -27,15 +27,18 @@ import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
 import { LoginComponent } from './login/login.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { FormsComponent } from './forms/forms.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 const routes: Routes = [
-  
+   
   {path:'',component:LoginComponent},
 
   {path:'login',component:LoginComponent},
   
   
-  {path:'mywebsite',component:MywebsiteComponent, children:[{path:'home',component:HomeComponent},
+  {path:'mywebsite',canActivate:[AuthenticationGuard],component:MywebsiteComponent, children:[
+    {path:'home',component:HomeComponent},
      {path:'welcome',component:WelcomeComponent},
      {path:'databinding',component:DatabindingComponent},
     {path:'calculator',component:CalculatorComponent},
@@ -60,7 +63,9 @@ const routes: Routes = [
     {path:'idcard',component:IdcardComponent},
     {path:'create-idcard',component:CreateIdcardComponent},
     {path:'create-user',component:CreateUserComponent},
-    {path:'forms',component:FormsComponent}],
+    {path:'forms',component:FormsComponent},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent}],
   
 
     

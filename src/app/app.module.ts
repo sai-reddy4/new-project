@@ -32,6 +32,7 @@ import { CreateIdcardComponent } from './create-idcard/create-idcard.component';
 import { LoginComponent } from './login/login.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { FormsComponent } from './forms/forms.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { FormsComponent } from './forms/forms.component';
     CreateIdcardComponent,
     LoginComponent,
     CreateUserComponent,
-    FormsComponent
+    FormsComponent,
+    VehicleDetailsComponent
   ],
   imports: [
     BrowserModule,

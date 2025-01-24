@@ -24,6 +24,7 @@ export class LoginComponent {
       (data:any)=>{
         console.log(data);
         alert("login Successfully");
+        sessionStorage.setItem('token',data.token);
         // navigate to mywebsite
         this. _router.navigateByUrl('/mywebsite')
 

@@ -33,4 +33,13 @@ export class VehicleService {
   createVehicle(data:any){
     return this._httpClint.post("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction",data);
   }
+  // getting Specific data in http methods
+
+  getVehicle(id: any):Observable<any>{
+    return this._httpClint.get('https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction/'+id);
+  }
+
+  updatevehicle(id:number,data:any){
+    return this._httpClint.put("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction/"+id,data)
+  }
 }
