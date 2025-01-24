@@ -8,6 +8,7 @@ import { VehicleService } from '../vehicle.service';
   styleUrls: ['./vehicle-details.component.css']
 })
 export class VehicleDetailsComponent {
+  
   vehicle:any=[];
 
   constructor(private _activatedRoute:ActivatedRoute,private _vehicleService:VehicleService){

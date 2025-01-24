@@ -6,15 +6,18 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class VehicleService {
+  
+
+  baseUrl:string="https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction";
 
   constructor(private _httpClint:HttpClient) { }
 
   getVehicles():Observable<any>{
-    return this._httpClint.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction");
+    return this._httpClint.get(this.baseUrl);
   }
 
   getFilteredVehicles(term:string):Observable<any>{
-    return this._httpClint.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction?filter="+term)
+    return this._httpClint.get(this.baseUrl+"?filter="+term)
   }
 
   getSortedVehicles(column:string,order:string):Observable<any>{

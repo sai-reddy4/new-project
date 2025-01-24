@@ -39,4 +39,8 @@ form {
   button:hover {
     background-color: #27b300;
   }
-  
+  h1{
+    text-align: center;
+    color: #27b300;
+    text-shadow: 0 0 10px rgb(255, 94, 0);
+  }

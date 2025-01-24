@@ -71,8 +71,8 @@
     </div>
         <div class="bot">
 
-            <button class="btn btn-dark">view</button>
-            <button class="btn btn-info">Edit</button>
+            <button class="btn btn-dark" routerLink="/mywebsite/view-id/{{idcard.id}}">view</button>
+            <button class="btn btn-info" routerLink="/mywebsite/edit-id/{{idcard.id}}">Edit</button>
             <button class="btn btn-danger" (click)="delete(idcard.id)">delete</button>
 
         </div>

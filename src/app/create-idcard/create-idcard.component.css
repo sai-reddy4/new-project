@@ -1,29 +1,49 @@
-.parent{
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e0f7fa; /* Light cyan background */
+    border: 1px solid #00838f; /* Dark cyan border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"], 
+  button {
     width: 100%;
-    height: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main{
-    width: 60%;
-    height: 90%;
-    background-color: rgb(236, 201, 158);
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #00838f; /* Dark cyan border */
     border-radius: 5px;
-
-    
-}
-input{
-    width: 500px;
-    height: 30px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 50px;
-    padding-left: 10px;
-}
-
-.btn{
-    margin-left: 200px;
-    width: 200px;
-}
+    background-color: #ffffff; /* White background */
+    color: #ff4081;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ff4081; /* Hot pink border on focus */
+    outline: none;
+    color: rgb(227, 128, 14);
+  }
+  
+  button {
+    background-color: #ff4081; /* Hot pink background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0fed3bf8; /* Darker pink on hover */
+  }
+  
+  h1 {
+    color: #00838f; /* Dark cyan text */
+    text-align: center;
+  }
+  
