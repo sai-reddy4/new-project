@@ -69,6 +69,10 @@
             <th>Fuel</th>
             <th>Image</th>
             <th>Action</th>
+            <!-- <th colspan="2">View</th> -->
+            <th>View</th>
+            <th>Edit</th>
+
         </tr>
     </thead>
     <tbody>
@@ -80,6 +84,16 @@
             <td>{{vehicle.fuel}}</td>
             <td> <img src="{{vehicle.image}}" width="50px" height="50px"></td>
             <td><button class="btn btn-danger" (click)="delete(vehicle.id)"><i class="bi bi-trash"></i></button></td>
+
+<!-- =================Specific get data from http method=================================================== -->
+
+            <td><button class="btn btn-info" routerLink="/mywebsite/vehicle-details/{{vehicle.id}}">
+                <i class="bi bi-eye-fill"></i></button></td>
+
+<!--=========== ====================edit or update http method====================================================== -->
+
+                <td><button class="btn btn-info" routerLink="/mywebsite/edit-vehicle/{{vehicle.id}}">
+                    <i class="bi bi-pencil-square"></i></button></td>
         </tr>
     </tbody>
 </table>

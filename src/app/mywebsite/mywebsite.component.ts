@@ -10,6 +10,7 @@ export class MywebsiteComponent {
 
   constructor( private _router:Router){}
 logout(){
+  sessionStorage.removeItem("token");
   alert("logout Successfully")
   this._router.navigateByUrl("/login");
 }

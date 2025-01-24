@@ -130,13 +130,21 @@ Reactive forms=
        2)Nested FormGroup----form inside form 
        3)Dynamic Forms------Dynamic data read
        4)Form Array--------
-       5)Validators
-       6)custom Validators
+       5)Validators-Controls the user input
+
+             1)predefine Validators
+             2)custom Validators
+             3)async Validators
 
 
-     1)FormGroup
+   guards (or) Route guards=
+   =======================
 
-     2)Nested FormGroup
+         --> Can activate
+         --> Can deactivate
+         --> Child-Can activate
+
+
 
      Form Validations
 =ニニニニニニニニニニニニ===
