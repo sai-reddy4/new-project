@@ -4,6 +4,7 @@
         <img src="{{mytra.image}}" alt="" >
         <div class="rating">
             {{mytra.rating.rate}}
+            <app-ratings [rating]="mytra.rating.rate"></app-ratings>
             {{mytra.rating.count}}
 
         </div>

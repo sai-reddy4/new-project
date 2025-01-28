@@ -65,7 +65,11 @@
         <td >{{i+1}}</td>
         <td>{{product.name}}</td>
         <td>{{product.price}}</td>
-        <td>{{product.rating}}</td>
+        <td >{{product.rating}} 
+
+            <app-ratings [rating]="product.rating"></app-ratings>
+        
+        </td>
         <td>{{product.freedelivery}}</td>
 
         <td>

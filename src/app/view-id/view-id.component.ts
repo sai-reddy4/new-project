@@ -17,11 +17,12 @@ export class ViewIdComponent {
     _activatedRoute.params.subscribe(
       (data:any)=>{
         console.log(data.id);
+        // this.view=data.id;
 
         _idcardService.getviewidcard(data.id).subscribe(
           (data:any)=>{
             this.view=data;
-            console.log(data.id);
+            console.log(data);
           }
         )
 
