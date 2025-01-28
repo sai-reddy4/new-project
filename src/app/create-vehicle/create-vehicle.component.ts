@@ -58,8 +58,9 @@ export class CreateVehicleComponent {
   if(this.id){
     this._vehicleService.updatevehicle(this.id,this.vehicleForm.value).subscribe(
       (data:any)=>{
-        console.log(data);
-        alert('Vehicle created successfully');
+        console.log(data.id);
+        // this.id=data.id;
+        alert('Vehicle update successfully');
         this._router.navigateByUrl('/mywebsite/vehicle');
 
         
@@ -70,7 +71,7 @@ export class CreateVehicleComponent {
   }
 // create
 else{
-    console.log(this.vehicleForm.value);
+    
     this._vehicleService.createVehicle(this.vehicleForm.value).subscribe(
     (data:any)=>{
       console.log(data);

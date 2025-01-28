@@ -175,6 +175,46 @@ eve.holt@reqres.in
 
 
 
+Angular life cycle Hooks=
+=========================
+
+  * used to detect the changes
+
+
+       ngOnChanges-changes in input value- used in parent Child communication
+       ngOnInIt     -Initialization of value
+       ngDoCheck     -changes in component
+       ngContent In It
+       ngContent Check It
+       ngView Unit
+       ngView Check
+       ng Distroy   -cleanup existing Resources when coming out from component
+
+
+
+      ==>Initialization
+      ==>Close Detection
+      ==>Resource cleanup
+      ==>Custom logics
+
+
+
+communication=
+================  shARE the data from parent <==> child and in b/w siblings
+
+
+create 2 sibling component------sibling1,sibling2
+
+***module communication
+
+           
+
+             
+
+
+
+
+
 
 
 

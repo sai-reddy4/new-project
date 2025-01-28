@@ -34,6 +34,13 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { FormsComponent } from './forms/forms.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { ViewIdComponent } from './view-id/view-id.component';
+import { ViewAccoutComponent } from './view-accout/view-accout.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingsComponent } from './ratings/ratings.component';
 
 
 @NgModule({
@@ -67,7 +74,14 @@ import { ViewIdComponent } from './view-id/view-id.component';
     CreateUserComponent,
     FormsComponent,
     VehicleDetailsComponent,
-    ViewIdComponent
+    ViewIdComponent,
+    ViewAccoutComponent,
+    CreateAccountComponent,
+    Sibling1Component,
+    Sibling2Component,
+    ParentComponent,
+    ChildComponent,
+    RatingsComponent
   ],
   imports: [
     BrowserModule,

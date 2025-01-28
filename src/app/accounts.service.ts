@@ -27,4 +27,13 @@ export class AccountsService {
   deleteAccounts(id:number):Observable<any>{
     return this._httpClint.delete("https://6128991386a213001729f9df.mockapi.io/test/v1/principals/"+id);
   }
+  getviewaccount(id:number):Observable<any>{
+    return this._httpClint.get("https://6128991386a213001729f9df.mockapi.io/test/v1/principals/"+id)
+  }
+  updateaccount(id:number,data:any):Observable<any>{
+    return this._httpClint.put("https://6128991386a213001729f9df.mockapi.io/test/v1/principals/"+id,data);
+  }
+  createaccount(data: any):Observable<any>{
+     return this._httpClint.post("https://6128991386a213001729f9df.mockapi.io/test/v1/principals",data);
+  }
 }

@@ -1,5 +1,8 @@
 <h1>Accounts</h1>
 
+<button class="btn btn-primary" routerLink="/mywebsite/create-account">Create new account</button>
+
+
 <input type="text" [(ngModel)]="sai" (keyup)="filter()">
 <!-- ------------------------------------------------------------------------- -->
 
@@ -47,7 +50,9 @@
             <th>city</th>
             <th>profie_picture</th>
             <th>id</th>
-            <th>Acctions</th>
+            <th>Actions</th>
+            <th>View</th>
+            <th>Edit</th>
         </tr>
     </thead>
     <tbody>
@@ -59,6 +64,10 @@
             <td><img src="{{accounts.profie_picture}}" width="50px" height="50px"></td>
             <td>{{accounts.id}}</td>
             <td><button class="btn btn-danger" (click)="delete(accounts.id)"><i class="bi bi-trash"></i></button></td>
+
+            <td><button class="btn btn-primary" routerLink="/mywebsite/view-account/{{accounts.id}}"><i class="bi bi-eyeglasses"></i></button></td>
+            
+            <td><button class="btn btn-info" routerLink="/mywebsite/edit-account/{{accounts.id}}"><i class="bi bi-pencil-fill"></i></button></td>
             
         </tr>
     </tbody>

@@ -30,6 +30,13 @@ import { FormsComponent } from './forms/forms.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { ViewIdComponent } from './view-id/view-id.component';
+import { ViewAccoutComponent } from './view-accout/view-accout.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingsComponent } from './ratings/ratings.component';
 
 const routes: Routes = [
    
@@ -68,7 +75,15 @@ const routes: Routes = [
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'edit-vehicle/:id',component:CreateVehicleComponent},
     {path:'view-id/:id',component:ViewIdComponent},
-    {path:'edit-id/:id',component:CreateIdcardComponent}],
+    {path:'edit-id/:id',component:CreateIdcardComponent},
+    {path:'view-account/:id',component:ViewAccoutComponent},
+    {path:'create-account',component:CreateAccountComponent},
+    {path:'edit-account/:id',component:CreateAccountComponent},
+    {path:'sibling1',component:Sibling1Component},
+    {path:'sibling2',component:Sibling2Component},
+    {path:'parent',component:ParentComponent},
+    {path:'child',component:ChildComponent},
+    {path:'ratings',component:RatingsComponent}],
   
 
     
