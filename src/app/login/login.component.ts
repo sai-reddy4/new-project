@@ -26,7 +26,7 @@ export class LoginComponent {
         alert("login Successfully");
         sessionStorage.setItem('token',data.token);
         // navigate to mywebsite
-        this. _router.navigateByUrl('/mywebsite')
+        this. _router.navigateByUrl('/mywebsite/home')
 
       },(err:any)=>{
         alert("Invali Credentials");

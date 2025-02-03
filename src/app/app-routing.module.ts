@@ -1,5 +1,5 @@
 import { Component, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { MywebsiteComponent } from './mywebsite/mywebsite.component';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -37,12 +37,14 @@ import { Sibling2Component } from './sibling2/sibling2.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { RatingsComponent } from './ratings/ratings.component';
+import { ToDoComponent } from './to-do/to-do.component';
 
 const routes: Routes = [
    
   {path:'',component:LoginComponent},
 
   {path:'login',component:LoginComponent},
+
   
   
   {path:'mywebsite',canActivate:[AuthenticationGuard],component:MywebsiteComponent, children:[
@@ -83,11 +85,13 @@ const routes: Routes = [
     {path:'sibling2',component:Sibling2Component},
     {path:'parent',component:ParentComponent},
     {path:'child',component:ChildComponent},
-    {path:'ratings',component:RatingsComponent}],
+    {path:'ratings',component:RatingsComponent},
+    {path:'to-do',component:ToDoComponent},
+    {path:'payments', loadChildren:() =>import('./payments/payments.module').then(m=>m.PaymentsModule)}
   
-
-    
-  },
+  
+  
+  ]},
   
   
 
@@ -95,7 +99,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

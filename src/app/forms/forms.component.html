@@ -26,6 +26,7 @@
     <div *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched">
         <p *ngIf="userForm.get('email')?.errors?.['required']">Mail required</p>
         <p *ngIf="userForm.get('email')?.errors?.['email']">invalid mail</p>
+        <p *ngIf="userForm.get('email')?.errors?.['tcsMail']">required tcs mail only</p>
 
     </div>
 

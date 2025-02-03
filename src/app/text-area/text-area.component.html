@@ -1,0 +1,16 @@
+<h2>TextArea</h2>
+<div class="container">
+
+  <textarea [(ngModel)]="charecters" (input)="textlimit($event)" maxlength="{{max}}">
+
+    <div class>
+      {{text}} /{{max}}
+    </div>
+  </textarea>
+  
+  
+  
+  <p *ngIf="text==max" style="color: brown;">maximum characters reached</p>
+
+</div>
+

@@ -64,7 +64,7 @@
         <tr *ngFor="let product of products;let i=index">
         <td >{{i+1}}</td>
         <td>{{product.name}}</td>
-        <td>{{product.price}}</td>
+        <td>{{product.price | balance}}</td>
         <td >{{product.rating}} 
 
             <app-ratings [rating]="product.rating"></app-ratings>

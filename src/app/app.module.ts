@@ -41,10 +41,14 @@ import { Sibling2Component } from './sibling2/sibling2.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { RatingsComponent } from './ratings/ratings.component';
+import { CapitalDirective } from './capital.directive';
+import { BalancePipe } from './balance.pipe';
+import { TextAreaComponent } from './text-area/text-area.component';
+import { ToDoComponent } from './to-do/to-do.component';
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     MywebsiteComponent,
     HomeComponent,
@@ -81,8 +85,12 @@ import { RatingsComponent } from './ratings/ratings.component';
     Sibling2Component,
     ParentComponent,
     ChildComponent,
-    RatingsComponent
-  ],
+    RatingsComponent,
+    CapitalDirective,
+    BalancePipe,
+      TextAreaComponent,
+      ToDoComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
