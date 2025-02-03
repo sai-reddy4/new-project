@@ -1,7 +1,7 @@
 <h1>Create user</h1>
 <!-- --------------------------------------------------------------------FormGroup------------------------------------------------------------------- -->
 <form action="" [formGroup]="userForm">
-    <input type="text" placeholder="Name" id="name" formControlName="name"><br><br>
+    <input type="text" placeholder="Name" id="name" formControlName="name" appCapital><br><br>
 
     <div *ngIf="userForm.get('name')?.invalid && userForm.get('name')?.touched">
         <p *ngIf="userForm.get('name')?.errors?.['required']">Name is required</p>
@@ -12,6 +12,7 @@
     <div *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched">
         <p *ngIf="userForm.get('email')?.errors?.['required']">Email is required</p>
         <p *ngIf="userForm.get('email')?.errors?.['email']">Email is invalid</p>
+        <p *ngIf="userForm.get('email')?.errors?.['tcsMail']">tcs mail required</p>
 
     </div>
 
@@ -97,6 +98,13 @@
 
                 <br>
 
+    
+
+
+    <app-text-area [max]="24"></app-text-area>
+
+
+    <br><br><br>
     <button class="btn btn-info" (click)="create()">Create</button>
 
 </form>

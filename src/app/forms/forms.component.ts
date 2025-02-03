@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { tcsMail } from 'src/app/validators';
 
 @Component({
   selector: 'app-forms',
@@ -12,7 +13,7 @@ export class FormsComponent {
     name:new FormControl('',[Validators.required]),
     class:new FormControl('',[Validators.required]),
     fathername:new FormControl(),
-    email:new FormControl('',[Validators.required,Validators.email]),
+    email:new FormControl('',[Validators.required,Validators.email,tcsMail]),
 
        address:new FormGroup({
         addressline:new FormControl(),
