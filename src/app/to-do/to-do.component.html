@@ -8,13 +8,21 @@
     <div class="bot">
         <div class="cont1">
 
-            <input type="text" [(ngModel)]="text" placeholder="anil anna ">
+            <input type="text" [(ngModel)]="text" placeholder="Add Tast to List ">
             <button class="btn btn-success" id="bt1" (click)="addtask()">ADD TASK</button>
 
         </div>
         <div class="cont2" >
 
-            <button class="btn btn-danger" id="bt2">Delete</button>
+            <ol>
+                <li *ngFor="let list of lists; let i = index">
+                    {{list}}
+
+                    <button class="btn btn-danger" id="bt2" (click)="delete(i)">Delete</button>
+
+                </li>
+            </ol>
+
 
         </div>
     </div>

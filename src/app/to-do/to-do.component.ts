@@ -8,9 +8,18 @@ import { Component } from '@angular/core';
 export class ToDoComponent {
 
   text:any;
-  items:any=[];
+  lists:any=[];
 
   addtask(){
+    if(this.text.trim() !==""){
+      this.lists.push(this.text);
+      this.text="";
+    }
+
+  }
+
+  delete(i:number){
+    this.lists.splice(i,1);
 
   }
 }
